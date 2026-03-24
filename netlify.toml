@@ -6,6 +6,26 @@
   to = "/ksef/"
   status = 301
 
+[[redirects]]
+  from = "/funkcje"
+  to = "/funkcje/"
+  status = 301
+
+[[redirects]]
+  from = "/cennik"
+  to = "/cennik/"
+  status = 301
+
+[[redirects]]
+  from = "/pytania"
+  to = "/pytania/"
+  status = 301
+
+[[redirects]]
+  from = "/kontakt"
+  to = "/kontakt/"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]

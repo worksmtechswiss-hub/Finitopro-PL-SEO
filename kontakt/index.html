@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO: Title -->
+  <title>Kontakt — FinitoPro | Napisz do nas</title>
+
+  <!-- SEO: Meta description -->
+  <meta name="description" content="Skontaktuj się z zespołem FinitoPro. Odpowiadamy na pytania o wdrożenie, ceny i dopasowanie systemu do Twojej firmy. Email: kontakt@finitopro.pl">
+
+  <!-- SEO: Keywords -->
+  <meta name="keywords" content="kontakt FinitoPro, napisz do FinitoPro, kontakt oprogramowanie dla firm, FinitoPro email, FinitoPro telefon, pomoc FinitoPro">
+
+  <!-- SEO: Hreflang -->
+  <link rel="alternate" hreflang="pl" href="https://finitopro.pl/kontakt/">
+  <link rel="alternate" hreflang="de-CH" href="https://finitopro.ch/">
+  <link rel="alternate" hreflang="x-default" href="https://finitopro.pl/kontakt/">
+
+  <!-- SEO: Canonical -->
+  <link rel="canonical" href="https://finitopro.pl/kontakt/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kontakt — FinitoPro | Napisz do nas">
+  <meta property="og:description" content="Skontaktuj się z zespołem FinitoPro. Odpowiadamy na pytania o wdrożenie, ceny i dopasowanie systemu do Twojej firmy.">
+  <meta property="og:url" content="https://finitopro.pl/kontakt/">
+  <meta property="og:site_name" content="FinitoPro">
+  <meta property="og:locale" content="pl_PL">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kontakt — FinitoPro | Napisz do nas">
+  <meta name="twitter:description" content="Skontaktuj się z zespołem FinitoPro. Odpowiadamy na pytania o wdrożenie, ceny i dopasowanie systemu.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Schema.org: Organization with ContactPoint -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "FinitoPro",
+    "url": "https://finitopro.pl",
+    "logo": "https://finitopro.pl/images/logo.svg",
+    "description": "Szwajcarskie oprogramowanie do zarządzania firmą — projekty, faktury, czas pracy i magazyn w jednym narzędziu.",
+    "email": "kontakt@finitopro.pl",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "kontakt@finitopro.pl",
+      "contactType": "customer support",
+      "availableLanguage": ["Polish", "German", "English"],
+      "areaServed": ["PL", "CH"]
+    },
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Schlosstalstrasse 210",
+        "addressLocality": "Winterthur",
+        "postalCode": "8408",
+        "addressCountry": "CH",
+        "name": "SM Tech GmbH"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "ul. Hoża 29",
+        "addressLocality": "Warszawa",
+        "postalCode": "00-521",
+        "addressCountry": "PL",
+        "name": "OCTOLABS Sp. z o.o."
+      }
+    ],
+    "sameAs": [
+      "https://finitopro.ch",
+      "https://www.linkedin.com/company/finitopro",
+      "https://www.instagram.com/finitopro"
+    ]
+  }
+  </script>
+
+  <!-- Contact page specific styles -->
+  <style>
+    /* ===== CONTACT HERO ===== */
+    .contact-hero {
+      background: var(--bg);
+      text-align: center;
+      padding: 100px 0 60px;
+      position: relative;
+      overflow: hidden;
+    }
+    .contact-hero::before {
+      content: '';
+      position: absolute;
+      top: -30%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(118,85,182,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .contact-hero .hero-badge {
+      display: inline-block;
+      background: var(--primary-bg);
+      color: var(--primary);
+      padding: 8px 20px;
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 24px;
+      letter-spacing: 0.5px;
+    }
+    .contact-hero h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--text-dark);
+      margin-bottom: 12px;
+      letter-spacing: -1px;
+    }
+    .contact-hero h1 .highlight {
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .contact-hero .hero-subtitle {
+      font-size: 18px;
+      color: var(--text-secondary);
+      max-width: 640px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ===== CONTACT SECTION ===== */
+    .contact-section {
+      padding: 80px 0;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    /* ===== FORM ===== */
+    .contact-form-card {
+      background: var(--bg-white);
+      border-radius: var(--radius);
+      padding: 40px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-light);
+    }
+    .contact-form-card h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+    .contact-form-card .form-subtitle {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 32px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .form-group label .required {
+      color: var(--danger);
+      margin-left: 2px;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      color: var(--text);
+      background: var(--bg);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-xs);
+      transition: all 0.2s ease;
+      outline: none;
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: var(--text-muted);
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(118,85,182,0.12);
+      background: var(--bg-white);
+    }
+    .form-group textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .form-submit {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 14px 32px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: var(--radius-xs);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      width: 100%;
+      justify-content: center;
+      margin-top: 8px;
+    }
+    .form-submit:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-md);
+    }
+    .form-submit svg {
+      flex-shrink: 0;
+    }
+
+    /* ===== CONTACT INFO CARDS ===== */
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .info-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-sm);
+      padding: 24px;
+      border: 1px solid var(--border-light);
+      transition: all 0.2s ease;
+    }
+    .info-card:hover {
+      box-shadow: var(--shadow);
+      border-color: var(--border);
+    }
+    .info-card-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+    .info-card-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-xs);
+      background: var(--primary-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .info-card-icon svg {
+      width: 20px;
+      height: 20px;
+      color: var(--primary);
+    }
+    .info-card h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+    .info-card p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .info-card a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .info-card a:hover {
+      text-decoration: underline;
+    }
+    .info-card .email-large {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--primary);
+      display: block;
+      margin-top: 4px;
+    }
+    .info-card .company-block {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-light);
+    }
+    .info-card .company-block:first-of-type {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+    .info-card .company-name {
+      font-weight: 700;
+      color: var(--text-dark);
+      font-size: 14px;
+    }
+    .info-card .company-details {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 4px;
+      line-height: 1.5;
+    }
+
+    /* ===== CONTACT CTA ===== */
+    .contact-cta {
+      text-align: center;
+      padding: 80px 0;
+      background: var(--primary-bg-light);
+    }
+    .contact-cta h2 {
+      font-size: clamp(24px, 3.5vw, 36px);
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 16px;
+    }
+    .contact-cta p {
+      font-size: 17px;
+      color: var(--text-secondary);
+      max-width: 520px;
+      margin: 0 auto 32px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      .contact-form-card {
+        padding: 28px;
+      }
+      .contact-hero {
+        padding: 80px 0 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="/" class="nav-logo" aria-label="FinitoPro - strona główna">
+      <img src="../images/logo.png" alt="FinitoPro logo" height="40" style="height: 40px; width: auto;">
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Start</a></li>
+      <li><a href="/funkcje/">Funkcje</a></li>
+      <li><a href="/cennik/">Cennik</a></li>
+      <li><a href="/ksef/">KSeF</a></li>
+      <li><a href="/pytania/">FAQ</a></li>
+      <li><a href="/kontakt/" style="color: var(--primary); font-weight: 600;">Kontakt</a></li>
+      <li><a href="https://app.finitopro.ch/login" class="nav-cta">Wypróbuj za darmo</a></li>
+    </ul>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Otwórz menu nawigacji">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="contact-hero">
+  <div class="container">
+    <div class="hero-badge">Kontakt</div>
+    <h1><span class="highlight">Jesteśmy tu dla Ciebie</span></h1>
+    <p class="hero-subtitle">Chętnie odpowiemy na każde pytanie dotyczące FinitoPro — od wdrożenia, przez ceny, aż po dopasowanie systemu do specyfiki Twojej branży.</p>
+  </div>
+</header>
+
+<!-- Contact Section -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Left: Contact Form -->
+      <div class="contact-form-card">
+        <h2>Porozmawiajmy o Twojej firmie</h2>
+        <p class="form-subtitle">Wypełnij formularz, a odezwiemy się najszybciej jak to możliwe.</p>
+
+        <form action="#" method="POST" id="contactForm">
+          <div class="form-group">
+            <label for="company">Firma</label>
+            <input type="text" id="company" name="company" placeholder="Nazwa Twojej firmy">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Imię i nazwisko <span class="required">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Jan Kowalski" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon</label>
+              <input type="tel" id="phone" name="phone" placeholder="+48 123 456 789">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="jan@firma.pl" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Wiadomość <span class="required">*</span></label>
+            <textarea id="message" name="message" placeholder="Opisz, czego potrzebujesz — np. ile osób będzie korzystać z systemu, jakie moduły Cię interesują..." required></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">
+            Wyślij wiadomość
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Right: Contact Info Cards -->
+      <div class="contact-info">
+
+        <!-- Email card -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <div class="info-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+            </div>
+            <h3>Email</h3>
+          </div>
+          <a href="mailto:kontakt@finitopro.pl" class="email-large">kontakt@finitopro.pl</a>
+        </div>
+
+        <!-- Response time card -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <div class="info-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3>Czas odpowiedzi</h3>
+          </div>
+          <p>Odpowiadamy zazwyczaj w ciągu <strong>24 godzin</strong> w dni robocze. Pilne sprawy staramy się rozwiązywać jeszcze szybciej.</p>
+        </div>
+
+        <!-- FAQ link card -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <div class="info-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9 9a3 3 0 015.12-2.13A3 3 0 0112 15"/><circle cx="12" cy="19" r="0.5" fill="currentColor"/></svg>
+            </div>
+            <h3>Masz pytania?</h3>
+          </div>
+          <p>Sprawdź sekcję <a href="/pytania/">FAQ</a> — odpowiedzi na najczęstsze pytania o FinitoPro, wdrożenie, cennik i KSeF.</p>
+        </div>
+
+        <!-- Company info card -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <div class="info-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9h1"/><path d="M9 13h1"/><path d="M9 17h1"/></svg>
+            </div>
+            <h3>Dane firmowe</h3>
+          </div>
+
+          <div class="company-block">
+            <div class="company-name">SM Tech GmbH</div>
+            <div class="company-details">
+              Schlosstalstrasse 210<br>
+              8408 Winterthur, Szwajcaria
+            </div>
+          </div>
+
+          <div class="company-block">
+            <div class="company-name">OCTOLABS Sp. z o.o.</div>
+            <div class="company-details">
+              ul. Hoża 29<br>
+              00-521 Warszawa, Polska<br>
+              KRS: 0001185907 | NIP: 7011270907
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="contact-cta">
+  <div class="container">
+    <h2>Nie chcesz pisać?</h2>
+    <p>Wypróbuj Finito za darmo — 14 dni bez zobowiązań. Bez karty kredytowej, bez ukrytych kosztów.</p>
+    <a href="https://app.finitopro.ch/register" class="btn btn-primary">
+      Testuj 14 dni za darmo
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" style="display: block; margin-bottom: 16px;">
+          <img src="../images/logo.png" alt="FinitoPro" height="50" style="height: 50px; width: auto; filter: brightness(10);">
+        </a>
+        <p style="text-transform: uppercase; letter-spacing: 1px; font-size: 16px;">Więcej czasu na to, co ważne</p>
+      </div>
+
+      <div>
+        <h4>Produkt</h4>
+        <ul class="footer-links">
+          <li><a href="/funkcje/">Funkcje</a></li>
+          <li><a href="/cennik/">Cennik</a></li>
+          <li><a href="/ksef/">KSeF</a></li>
+          <li><a href="/pytania/">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Firma</h4>
+        <ul class="footer-links">
+          <li><a href="/kontakt/">Kontakt</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Pomoc</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Prawne</h4>
+        <ul class="footer-links">
+          <li><a href="#">Regulamin</a></li>
+          <li><a href="#">Polityka prywatności</a></li>
+          <li><a href="#">Informacje o firmie</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2026 FinitoPro — SM Tech Swiss GmbH. Wszelkie prawa zastrzeżone.
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script>
+// Mobile nav toggle
+document.getElementById('navToggle').addEventListener('click', function() {
+  document.getElementById('navLinks').classList.toggle('open');
+});
+
+// Navbar scroll effect
+window.addEventListener('scroll', function() {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+});
+</script>
+
+</body>
+</html>

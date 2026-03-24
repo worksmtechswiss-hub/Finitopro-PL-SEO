@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO: Title -->
+  <title>Cennik FinitoPro — 100 PLN za użytkownika | Wszystkie funkcje w jednej cenie</title>
+
+  <!-- SEO: Meta description -->
+  <meta name="description" content="FinitoPro kosztuje 100 PLN netto za użytkownika miesięcznie. 18 modułów, darmowe szkolenie, bezpłatna migracja danych. 14 dni za darmo — bez karty kredytowej.">
+
+  <!-- SEO: Keywords -->
+  <meta name="keywords" content="cennik FinitoPro, cena program do zarządzania firmą, 100 PLN użytkownik, oprogramowanie dla firm cennik, program ERP cennik, FinitoPro koszt">
+
+  <!-- SEO: Hreflang -->
+  <link rel="alternate" hreflang="pl" href="https://finitopro.pl/cennik/">
+  <link rel="alternate" hreflang="de-CH" href="https://finitopro.ch/">
+  <link rel="alternate" hreflang="x-default" href="https://finitopro.pl/cennik/">
+
+  <!-- SEO: Canonical -->
+  <link rel="canonical" href="https://finitopro.pl/cennik/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cennik FinitoPro — 100 PLN za użytkownika | Wszystkie funkcje w jednej cenie">
+  <meta property="og:description" content="FinitoPro kosztuje 100 PLN netto za użytkownika miesięcznie. 18 modułów, darmowe szkolenie, bezpłatna migracja danych. 14 dni za darmo.">
+  <meta property="og:url" content="https://finitopro.pl/cennik/">
+  <meta property="og:site_name" content="FinitoPro">
+  <meta property="og:locale" content="pl_PL">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Schema.org: Product -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "FinitoPro",
+    "description": "Oprogramowanie do zarządzania firmą — projekty, faktury, czas pracy, magazyn. 18 modułów w jednej cenie.",
+    "brand": {
+      "@type": "Organization",
+      "name": "FinitoPro"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "100",
+      "priceCurrency": "PLN",
+      "priceValidUntil": "2026-12-31",
+      "availability": "https://schema.org/InStock",
+      "url": "https://finitopro.pl/cennik/",
+      "description": "100 PLN netto za użytkownika miesięcznie. Wszystkie funkcje w jednej cenie."
+    }
+  }
+  </script>
+
+  <style>
+    /* Cennik page specific styles */
+    .cennik-hero {
+      background: var(--bg);
+      text-align: center;
+      padding: 100px 0 60px;
+    }
+    .cennik-hero .hero-content {
+      display: block;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .hero-bullets {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+    .hero-bullets li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      list-style: none;
+    }
+    .hero-bullets li svg {
+      color: var(--success);
+      flex-shrink: 0;
+    }
+    .pricing-card-section .pricing-card {
+      max-width: 560px;
+    }
+    .pricing-card .pricing-includes {
+      list-style: none;
+      text-align: left;
+      margin-bottom: 32px;
+    }
+    .pricing-card .pricing-includes li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 0;
+      font-size: 15px;
+      color: var(--text-secondary);
+      border-bottom: 1px solid var(--border-light);
+    }
+    .pricing-card .pricing-includes li:last-child {
+      border-bottom: none;
+    }
+    .pricing-card .pricing-includes li svg {
+      width: 20px;
+      height: 20px;
+      color: var(--success);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* Features checklist grid */
+    .features-checklist {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      list-style: none;
+    }
+    .features-checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      background: var(--bg-white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 16px 20px;
+      font-size: 15px;
+      color: var(--text);
+      transition: all 0.2s ease;
+    }
+    .features-checklist li:hover {
+      box-shadow: var(--shadow);
+      border-color: var(--primary-bg);
+    }
+    .features-checklist li svg {
+      width: 20px;
+      height: 20px;
+      color: var(--primary);
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* Comparison table */
+    .comparison-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .comparison-table thead th {
+      background: var(--primary);
+      color: white;
+      padding: 16px 24px;
+      font-size: 15px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .comparison-table thead th:first-child {
+      text-align: left;
+    }
+    .comparison-table tbody td {
+      padding: 14px 24px;
+      font-size: 15px;
+      color: var(--text);
+      border-bottom: 1px solid var(--border-light);
+      background: var(--bg-white);
+      text-align: center;
+    }
+    .comparison-table tbody td:first-child {
+      text-align: left;
+      font-weight: 500;
+    }
+    .comparison-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+    .comparison-table tbody tr:hover td {
+      background: var(--primary-bg-light);
+    }
+    .check-yes {
+      color: var(--success);
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .check-no {
+      color: var(--danger);
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .comparison-table .price-cell {
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .comparison-table .price-cell-other {
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    /* Benefits grid */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .benefit-card {
+      background: var(--bg-white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      transition: all 0.3s ease;
+    }
+    .benefit-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-4px);
+      border-color: var(--primary-bg);
+    }
+    .benefit-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: var(--radius-sm);
+      background: var(--primary-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+    .benefit-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text-dark);
+    }
+    .benefit-card p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Stats row */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .stat-card {
+      background: var(--bg-white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .stat-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-4px);
+    }
+    .stat-value {
+      font-size: 40px;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: -1px;
+      margin-bottom: 4px;
+    }
+    .stat-label {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* Responsive overrides for cennik */
+    @media (max-width: 1024px) {
+      .features-checklist { grid-template-columns: repeat(2, 1fr); }
+      .stats-row { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .cennik-hero { padding: 60px 0 40px; }
+      .cennik-hero h1 { font-size: 32px !important; }
+      .hero-bullets { flex-direction: column; align-items: center; gap: 12px; }
+      .features-checklist { grid-template-columns: 1fr; }
+      .benefits-grid { grid-template-columns: 1fr; }
+      .stats-row { grid-template-columns: 1fr; }
+      .comparison-table { font-size: 14px; }
+      .comparison-table thead th,
+      .comparison-table tbody td { padding: 10px 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="/" class="nav-logo" aria-label="FinitoPro - strona główna">
+      <svg viewBox="0 0 36 36" fill="none" width="36" height="36">
+        <rect width="36" height="36" rx="8" fill="#7655b6"/>
+        <path d="M10 12h16v2H10zM10 17h12v2H10zM10 22h8v2H10z" fill="white"/>
+      </svg>
+      Finito<span>Pro</span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/#funkcje">Funkcje</a></li>
+      <li><a href="/#branze">Branże</a></li>
+      <li><a href="/#jak-to-dziala">Jak to działa</a></li>
+      <li><a href="/cennik/" style="color: var(--primary); font-weight: 600;">Cennik</a></li>
+      <li><a href="/ksef/">KSeF</a></li>
+      <li><a href="/#faq">FAQ</a></li>
+      <li><a href="https://app.finitopro.ch/login" class="nav-cta">Wypróbuj za darmo</a></li>
+    </ul>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Otwórz menu nawigacji">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero cennik-hero">
+  <div class="container hero-content">
+    <div class="section-badge">Cennik</div>
+
+    <h1>Zapomnij o pakietach. <span class="highlight">Płać jedną stałą kwotę za użytkownika.</span></h1>
+
+    <p class="hero-subtitle">W Finito nie ma planów Basic, Standard ani Enterprise. Każdy użytkownik dostaje pełen dostęp do wszystkich funkcji.</p>
+
+    <p class="hero-subtitle" style="font-size: 20px; font-weight: 600; color: var(--primary);">100 PLN netto za użytkownika, niezależnie od tego, ile funkcji używasz.</p>
+
+    <ul class="hero-bullets">
+      <li>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+        Bez umów długoterminowych
+      </li>
+      <li>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+        14 dni za darmo
+      </li>
+      <li>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+        Anuluj kiedy chcesz
+      </li>
+    </ul>
+  </div>
+</header>
+
+<!-- Pricing Card -->
+<section class="section pricing-card-section" style="background: var(--primary-bg-light);">
+  <div class="container">
+    <div class="pricing-card">
+      <div class="pricing-badge">Najpopularniejszy plan</div>
+      <div class="pricing-price">100 PLN <span>/ użytkownik / miesiąc</span></div>
+      <p class="pricing-period">NETTO</p>
+
+      <ul class="pricing-includes">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+          Darmowe szkolenie dla całego zespołu
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+          Bezpłatna migracja danych z innych programów
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+          Bez umowy — rezygnujesz kiedy chcesz
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+          Dedykowany opiekun klienta przy wdrożeniu
+        </li>
+      </ul>
+
+      <a href="https://app.finitopro.ch/register" class="btn btn-primary" style="width: 100%; justify-content: center;">
+        Testuj za darmo przez 14 dni
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 18 Features -->
+<section class="section" id="funkcje-lista">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">18 modułów</div>
+      <h2 class="section-title">Wszystkie funkcje w jednej cenie</h2>
+      <p class="section-subtitle">Każdy użytkownik FinitoPro ma pełny dostęp do wszystkich 18 modułów — bez dopłat, bez ukrytych kosztów</p>
+    </div>
+
+    <ul class="features-checklist">
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+        Tworzenie ofert i wycen w kilka minut
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+        Baza klientów z pełną historią współpracy
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+        Tworzenie faktur szybko i w prosty sposób
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+        Szybkie wyszukiwanie i filtrowanie
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+        Tworzenie i zarządzanie projektami
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+        Zarządzanie stanami magazynowymi
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+        Przypisywanie zadań do pracowników
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+        Raporty i statystyki firmy
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+        Śledzenie postępu prac w czasie rzeczywistym
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+        Dostęp z komputera, tabletu i telefonu
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+        Dokumentacja zdjęciowa projektów
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+        Aplikacja dla pracowników
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+        Rejestracja czasu pracy z aplikacji mobilnej
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+        Możliwość podłączenia innych programów
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+        Planowanie i zarządzanie urlopami
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+        Zarządzanie kosztami w firmie
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+        Raporty czasu pracy dla każdego pracownika
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+        Rozbudowany kalendarz
+      </li>
+    </ul>
+
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="/funkcje/" class="btn btn-secondary">
+        Poznaj szczegóły wszystkich funkcji
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Comparison Table -->
+<section class="section" style="background: var(--primary-bg-light);">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">Porównanie</div>
+      <h2 class="section-title">Finito vs inne systemy</h2>
+      <p class="section-subtitle">Zobacz, dlaczego FinitoPro to najlepsza wartość na rynku</p>
+    </div>
+
+    <div style="max-width: 800px; margin: 0 auto; overflow-x: auto;">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Funkcja</th>
+            <th>Finito</th>
+            <th>Inne systemy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Wszystkie funkcje w jednej cenie</td>
+            <td><span class="check-yes" aria-label="Tak">&#10003;</span></td>
+            <td><span class="check-no" aria-label="Nie">&#10007;</span></td>
+          </tr>
+          <tr>
+            <td>Bez umowy długoterminowej</td>
+            <td><span class="check-yes" aria-label="Tak">&#10003;</span></td>
+            <td><span class="check-no" aria-label="Nie">&#10007;</span></td>
+          </tr>
+          <tr>
+            <td>Darmowe wdrożenie i szkolenie</td>
+            <td><span class="check-yes" aria-label="Tak">&#10003;</span></td>
+            <td><span class="check-no" aria-label="Nie">&#10007;</span></td>
+          </tr>
+          <tr>
+            <td>Wsparcie po polsku</td>
+            <td><span class="check-yes" aria-label="Tak">&#10003;</span></td>
+            <td><span class="check-no" aria-label="Nie">&#10007;</span></td>
+          </tr>
+          <tr>
+            <td>Aplikacja mobilna w cenie</td>
+            <td><span class="check-yes" aria-label="Tak">&#10003;</span></td>
+            <td><span class="check-no" aria-label="Nie">&#10007;</span></td>
+          </tr>
+          <tr>
+            <td>14 dni testów bez karty</td>
+            <td><span class="check-yes" aria-label="Tak">&#10003;</span></td>
+            <td><span class="check-no" aria-label="Nie">&#10007;</span></td>
+          </tr>
+          <tr>
+            <td>Cena za użytkownika</td>
+            <td class="price-cell">100 PLN</td>
+            <td class="price-cell-other">~490 PLN</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Benefits -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">Korzyści</div>
+      <h2 class="section-title">Co zyskujesz z FinitoPro?</h2>
+      <p class="section-subtitle">Jedno narzędzie, które zmienia sposób pracy całej firmy</p>
+    </div>
+
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon" aria-hidden="true">&#9201;</div>
+        <h3>Oszczędność czasu</h3>
+        <p>Koniec z ręcznym przepisywaniem danych. Finito automatyzuje powtarzalne zadania.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-icon" aria-hidden="true">&#128176;</div>
+        <h3>Pełna kontrola nad finansami</h3>
+        <p>Miej wszystkie przychody, koszty i płatności w jednym miejscu.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-icon" aria-hidden="true">&#128203;</div>
+        <h3>Lepsza organizacja pracy</h3>
+        <p>Projekty, zadania, terminy — wszystko uporządkowane.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-icon" aria-hidden="true">&#11088;</div>
+        <h3>Profesjonalny wizerunek</h3>
+        <p>Wysyłaj klientom eleganckie oferty i faktury z logo Twojej firmy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="section" style="background: var(--primary-bg-light);">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">W liczbach</div>
+      <h2 class="section-title">FinitoPro w praktyce</h2>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-value">8h+</div>
+        <div class="stat-label">oszczędności tygodniowo</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">30s</div>
+        <div class="stat-label">na wystawienie faktury</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">100%</div>
+        <div class="stat-label">widoczność finansów</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">0 PLN</div>
+        <div class="stat-label">ukrytych opłat</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2>14 dni za darmo — Sprawdź Finito w działaniu</h2>
+    <p>Bez karty kredytowej. Bez zobowiązań. Pełny dostęp do wszystkich funkcji.</p>
+    <a href="https://app.finitopro.ch/register" class="btn btn-primary">
+      Rozpocznij bezpłatny trial
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo" style="color: white; margin-bottom: 8px;">
+          <svg viewBox="0 0 36 36" fill="none" width="32" height="32">
+            <rect width="36" height="36" rx="8" fill="#7655b6"/>
+            <path d="M10 12h16v2H10zM10 17h12v2H10zM10 22h8v2H10z" fill="white"/>
+          </svg>
+          Finito<span style="color: #9B7FD4;">Pro</span>
+        </a>
+        <p>Szwajcarskie oprogramowanie do zarządzania firmą. Projekty, faktury, czas pracy i magazyn w jednym narzędziu.</p>
+      </div>
+
+      <div>
+        <h4>Produkt</h4>
+        <ul class="footer-links">
+          <li><a href="/#funkcje">Funkcje</a></li>
+          <li><a href="/cennik/">Cennik</a></li>
+          <li><a href="/ksef/">KSeF</a></li>
+          <li><a href="/#branze">Branże</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Firma</h4>
+        <ul class="footer-links">
+          <li><a href="#">O nas</a></li>
+          <li><a href="#">Kontakt</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Pomoc</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Prawne</h4>
+        <ul class="footer-links">
+          <li><a href="#">Regulamin</a></li>
+          <li><a href="#">Polityka prywatności</a></li>
+          <li><a href="#">Informacje o firmie</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2026 FinitoPro — SM Tech Swiss GmbH. Wszelkie prawa zastrzeżone.
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script>
+// Mobile nav toggle
+document.getElementById('navToggle').addEventListener('click', function() {
+  document.getElementById('navLinks').classList.toggle('open');
+});
+
+// Navbar scroll
+window.addEventListener('scroll', function() {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+});
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+  anchor.addEventListener('click', function(e) {
+    var href = this.getAttribute('href');
+    if (href !== '#') {
+      e.preventDefault();
+      var target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        document.getElementById('navLinks').classList.remove('open');
+      }
+    }
+  });
+});
+</script>
+
+</body>
+</html>
