@@ -368,23 +368,163 @@
 <nav class="navbar" id="navbar">
   <div class="nav-container">
     <a href="/" class="nav-logo" aria-label="FinitoPro - strona główna">
-      <img src="../images/logo.png" alt="FinitoPro logo" height="40" style="height: 40px; width: auto;">
+      <img src="../images/logo.png" alt="FinitoPro logo" height="36">
+      <span class="logo-text">FINITO</span>
     </a>
 
     <ul class="nav-links" id="navLinks">
-      <li><a href="/">Start</a></li>
-      <li><a href="/funkcje/">Funkcje</a></li>
+      <!-- Moduły Dropdown -->
+      <li class="nav-dropdown-trigger">
+        <button class="nav-dropdown-btn">
+          Moduły
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="mega-dropdown">
+          <div class="mega-dropdown-grid cols-4">
+            <a href="/funkcje/" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+              Dashboard
+            </a>
+            <a href="/funkcje/" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+              Projekty
+            </a>
+            <a href="/funkcje/" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+              Faktury
+            </a>
+            <a href="/funkcje/" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>
+              Oferty
+            </a>
+            <a href="/funkcje/" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Czas pracy
+            </a>
+            <a href="/funkcje/" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+              CRM
+            </a>
+            <a href="/funkcje/" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>
+              Urlopy
+            </a>
+            <a href="/funkcje/" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              Dokumentacja foto
+            </a>
+            <a href="/funkcje/" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+              Magazyn
+            </a>
+            <a href="/funkcje/" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+              Wydatki
+            </a>
+            <a href="/funkcje/" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg>
+              Aplikacja mobilna
+            </a>
+            <a href="/funkcje/" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6"/><path d="M23 11h-6"/></svg>
+              Portal klienta
+            </a>
+            <a href="/funkcje/" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.66 0 3-4.03 3-9s-1.34-9-3-9m0 18c-1.66 0-3-4.03-3-9s1.34-9 3-9"/></svg>
+              Usługi serwisowe
+            </a>
+          </div>
+          <div class="mega-dropdown-footer">
+            <a href="/funkcje/">
+              Wszystkie moduły
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <!-- Branże Dropdown -->
+      <li class="nav-dropdown-trigger">
+        <button class="nav-dropdown-btn">
+          Branże
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="mega-dropdown">
+          <div class="mega-dropdown-grid cols-4">
+            <a href="/#branze" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 20h20"/><path d="M5 20V8l7-5 7 5v12"/><path d="M9 20v-5h6v5"/></svg>
+              Budownictwo
+            </a>
+            <a href="/#branze" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 14.66V20a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2h5.34"/><polygon points="18 2 22 6 12 16 8 16 8 12 18 2"/></svg>
+              Malarstwo
+            </a>
+            <a href="/#branze" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              Elektryka
+            </a>
+            <a href="/#branze" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v6m0 12v2M4.93 4.93l4.24 4.24m5.66 5.66l4.24 4.24M2 12h6m8 0h6M4.93 19.07l4.24-4.24m5.66-5.66l4.24-4.24"/></svg>
+              Hydraulika
+            </a>
+            <a href="/#branze" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg>
+              Dekarstwo
+            </a>
+            <a href="/#branze" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c-4.97 0-9-2.24-9-5v-4c0-2.76 4.03-5 9-5s9 2.24 9 5v4c0 2.76-4.03 5-9 5z"/><path d="M12 8V2"/><path d="M8 6l4-4 4 4"/></svg>
+              Ogrodnictwo
+            </a>
+            <a href="/#branze" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+              Stolarstwo
+            </a>
+            <a href="/#branze" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4a2 2 0 012 2v6a2 2 0 01-2 2h-4"/><circle cx="5.5" cy="18" r="2.5"/><circle cx="18.5" cy="18" r="2.5"/></svg>
+              Przeprowadzki
+            </a>
+            <a href="/#branze" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+              Facility Service
+            </a>
+            <a href="/#branze" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+              Produkcja
+            </a>
+            <a href="/#branze" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+              Handel
+            </a>
+            <a href="/#branze" class="mega-dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              IT i agencje
+            </a>
+          </div>
+        </div>
+      </li>
+
       <li><a href="/cennik/">Cennik</a></li>
       <li><a href="/ksef/">KSeF</a></li>
-      <li><a href="/pytania/">FAQ</a></li>
-      <li><a href="/kontakt/" style="color: var(--primary); font-weight: 600;">Kontakt</a></li>
-      <li><a href="https://app.finitopro.ch/login" class="nav-cta">Wypróbuj za darmo</a></li>
+      <li><a href="/kontakt/">Kontakt</a></li>
+
+      <!-- Mobile-only actions (shown inside hamburger menu) -->
+      <li class="nav-mobile-actions" style="display:none;">
+        <a href="https://app.finitopro.ch/login" class="nav-login">Zaloguj się</a>
+        <a href="https://app.finitopro.ch/register" class="nav-cta">Testuj za darmo</a>
+      </li>
     </ul>
 
-    <button class="nav-toggle" id="navToggle" aria-label="Otwórz menu nawigacji">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
-      </svg>
+    <!-- Desktop actions -->
+    <div class="nav-actions">
+      <a href="https://app.finitopro.ch/login" class="nav-login">Zaloguj się</a>
+      <a href="https://app.finitopro.ch/register" class="nav-cta">
+        Testuj za darmo
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Otwórz menu nawigacji" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
     </button>
   </div>
 </nav>
@@ -404,7 +544,7 @@
     <div class="contact-grid">
 
       <!-- Left: Contact Form -->
-      <div class="contact-form-card">
+      <div class="contact-form-card fade-up-target">
         <h2>Porozmawiajmy o Twojej firmie</h2>
         <p class="form-subtitle">Wypełnij formularz, a odezwiemy się najszybciej jak to możliwe.</p>
 
@@ -443,7 +583,7 @@
       </div>
 
       <!-- Right: Contact Info Cards -->
-      <div class="contact-info">
+      <div class="contact-info fade-up-target">
 
         <!-- Email card -->
         <div class="info-card">
@@ -527,10 +667,20 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="/" style="display: block; margin-bottom: 16px;">
-          <img src="../images/logo.png" alt="FinitoPro" height="50" style="height: 50px; width: auto; filter: brightness(10);">
+        <a href="/" class="footer-logo">
+          <img src="../images/logo.png" alt="FinitoPro" height="36">
+          FINITO
         </a>
-        <p style="text-transform: uppercase; letter-spacing: 1px; font-size: 16px;">Więcej czasu na to, co ważne</p>
+        <p>Szwajcarskie oprogramowanie do zarządzania firmą — projekty, faktury, czas pracy i magazyn w jednym.</p>
+        <div class="footer-tagline">Więcej czasu na to, co ważne</div>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/finitopro" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/finitopro" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+        </div>
       </div>
 
       <div>
@@ -539,7 +689,7 @@
           <li><a href="/funkcje/">Funkcje</a></li>
           <li><a href="/cennik/">Cennik</a></li>
           <li><a href="/ksef/">KSeF</a></li>
-          <li><a href="/pytania/">FAQ</a></li>
+          <li><a href="/#branze">Branże</a></li>
         </ul>
       </div>
 
@@ -547,8 +697,7 @@
         <h4>Firma</h4>
         <ul class="footer-links">
           <li><a href="/kontakt/">Kontakt</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Pomoc</a></li>
+          <li><a href="/pytania/">FAQ</a></li>
         </ul>
       </div>
 
@@ -560,26 +709,29 @@
           <li><a href="#">Informacje o firmie</a></li>
         </ul>
       </div>
+
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Bądź na bieżąco z nowymi funkcjami i aktualizacjami FinitoPro.</p>
+        <form class="footer-newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Twój adres e-mail" required>
+          <button type="submit">Subskrybuj</button>
+        </form>
+      </div>
     </div>
 
     <div class="footer-bottom">
-      &copy; 2026 FinitoPro — SM Tech Swiss GmbH. Wszelkie prawa zastrzeżone.
+      <span>&copy; 2026 FinitoPro — SM Tech GmbH Swiss. Wszelkie prawa zastrzeżone.</span>
+      <span class="footer-bottom-love">
+        Made with
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        in Switzerland
+      </span>
     </div>
   </div>
 </footer>
 
-<!-- JavaScript -->
-<script>
-// Mobile nav toggle
-document.getElementById('navToggle').addEventListener('click', function() {
-  document.getElementById('navLinks').classList.toggle('open');
-});
-
-// Navbar scroll effect
-window.addEventListener('scroll', function() {
-  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
-});
-</script>
+<script src="/js/main.js"></script>
 
 </body>
 </html>
