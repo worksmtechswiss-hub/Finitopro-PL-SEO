@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 50" fill="none">
+  <!-- "Finito" in Outfit SemiBold style - white for dark bg -->
+  <text x="0" y="38" font-family="Outfit, sans-serif" font-weight="600" font-size="42" fill="#ffffff" letter-spacing="-0.5">Finito</text>
+  <!-- "Pr" in Outfit Light style - white -->
+  <text x="142" y="38" font-family="Outfit, sans-serif" font-weight="300" font-size="42" fill="#ffffff" letter-spacing="-0.5">Pr</text>
+  <!-- "o" replaced by circle with checkmark -->
+  <circle cx="216" cy="28" r="18" stroke="#8ed2c8" stroke-width="3" fill="none"/>
+  <path d="M207 28 L213 34 L226 21" stroke="#8ed2c8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
